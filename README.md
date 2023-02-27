@@ -35,4 +35,11 @@ spec:
   restartPolicy: Always
 status: {}
 ```
+## Other Examples of Imterpative Commands:
 
+* `kubectl run my-nginx-pod --image=nginx-alpine`
+* `kubectl run my-nginx-pod --image=nginx-alpine --labels="tier=frontend,app=my-app"`
+* `kubectl create service my-nginx-service clusterip`
+* `kubectl expose pod my-nginx-pod --port 8080 --name my-nginx-service`
+* `kubectl create deplopyment my-frontend-deployment --image=nginx --replicas=3`
+* `kubectl create namespace my-app`

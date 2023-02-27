@@ -1,5 +1,9 @@
 # Pods
 
+## Overview
+
+The smallest object you can create in kubernetes. Containers are never added or recreated in kubernetes. Pods, that house the containers are the objects that are re-created/added. 
+
 ## Commands 
 
 | Description | Command |
