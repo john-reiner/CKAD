@@ -6,4 +6,5 @@ spec:
     containers:
     - name: ubuntu-sleeper
     image: ubuntu-sleeper
-    args: ["10"]
+    command: ["sleep"] # same as ENTRYPOINT in Docker
+    args: ["10"] # same as CMD in Docker 
