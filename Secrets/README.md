@@ -59,6 +59,20 @@ spec:
       - secretRef:
           name: app-config
 ```
+## Secrets in Pods as Volumes:
+```
+volumes:
+  - name: app-secret-volume
+    secret:
+      secretName: app-secret
+```
+
+When using secrets a volumes each file mounted has the name as the key and the value is the content. 
+
+`ls /opt/app-secret-volume`
+`cat /opt/app-secret-volume/secretName`
+`app-secret`
+
 ## Notes on Secrets 
 
 * Secrets are not encrypted. Only encoded.
