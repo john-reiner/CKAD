@@ -7,6 +7,7 @@ Like a configMap, secrets are used to store sensitve information. Secrets use th
 `kubectl create secret generic <secret-name> --from-literal=<key>=<value>`
 
 `kubectl create secret generic app-secret --from-literal=API_KEY=123456789ten`
+`kubectl create secret generic app-secret --from-literal=API_KEY=123456789ten --from-literal=KEY=Value`
 
 ## Declarative
 
