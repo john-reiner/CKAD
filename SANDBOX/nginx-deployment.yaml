@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nginx-sandbox-deployment
+  labels:
+    sandbox: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+     sandbox: nginx 
+  template:
+    metadata:
+      labels:
+        sandbox: nginx
+    spec:
+      containers:
+        - name: nginx-sandbox-container
+          image: nginx
+          ports:
+            - containerPort: 8080
+          envFrom:
+          - configMapRef:
+              name: nginx-sandbox-configmap

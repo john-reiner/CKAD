@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example-rr
+  labels: 
+    name: example
+spec: 
+  containers:
+    - name: example-rr-container
+      image: nginx
+      ports:
+        - containerPort: 8080
+      resources:
+        requests:
+          memory: '1Gi'
+          cpu: 1
+        limits:
+          memory: "2Gi"
+          cpu: 2

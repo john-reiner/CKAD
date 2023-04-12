@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-sandbox-configmap
+data:
+  ENV: nginx-sandbox
+  LOREM: LoremipsumdolorsitametonsecteturadipiscingeliteddoeiusmodtemporincididuntutlaboreetdoloremagnaaliquatenimadminimveniamuisnostrudexercitationullamcolaborisnisiutaliquipexeacommodoconsequatDuisauteiruredolorinreprehenderitinvoluptatevelitessecillumdoloreeufugiatnullapariaturxcepteurintccaecatupidatatnonproidentsuntinculpaquiofficiadeseruntmollitanimidestlaborum
+  APP_COLOR: blue

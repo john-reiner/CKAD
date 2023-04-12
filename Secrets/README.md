@@ -1,6 +1,6 @@
 # Secrets
 
-Like a configMap, secrets are used to store sensitve information. Secrets use the same 2 step process for implementation as a config map. Must specify data in an encoded format.
+Like a configMap, secrets are used to store sensitive information. Secrets use the same 2 step process for implementation as a config map. Must specify data in an encoded format.
 
 ## Imperative
 
