@@ -14,6 +14,9 @@
 ## Example YAML file
 
 ```
-
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: <insert-namespace-name-here>
     
 ```
